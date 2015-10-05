@@ -7,11 +7,15 @@ $(document).ready(function() {
     var today = new Date();
     var year = today.getFullYear();
     var month = today.getMonth() + 1;
-    if (month< 10) {
+    if (month < 10) {
         var month = "0".concat(month.toString());
         window.month = month;
     };
     var day = today.getDate();
+    if (day < 10) {
+        var day = "0".concat(day.toString());
+        window.day = day;
+    };
     var todaysDate = year.toString() + "-" + month.toString() + "-" + day.toString();
 
     //rendering the calendar with the appropriate data
@@ -86,7 +90,8 @@ $(document).ready(function() {
     };
 
     var url = window.location; 
-    var houseSelected = url.toString().split("/")[4].split("_")[0];
+    var houseSelected = url.toString().split("/")[3].split("_")[0];
+    //var houseSelected = url.toString().split("/")[4].split("_")[0];
 
 
     var guestList = [];
@@ -100,7 +105,9 @@ $(document).ready(function() {
             var guestInfo = snapshot.val();
             if (guestInfo.location == houseSelected) {
                 guestList.push(guestInfo);
+                console.log(guestInfo.title + ": " + guestInfo.start);
                 console.log(guestInfo.title + ": " + guestInfo.end);
+                console.log(todaysDate);
                 
                 if (guestInfo.end.toString() == todaysDate) {
                     alert(guestInfo.title + " is checking OUT today!");
