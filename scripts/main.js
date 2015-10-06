@@ -90,8 +90,8 @@ $(document).ready(function() {
     };
 
     var url = window.location; 
-    //var houseSelected = url.toString().split("/")[3].split("_")[0];
-    var houseSelected = url.toString().split("/")[4].split("_")[0];
+    var houseSelected = url.toString().split("/")[3].split("_")[0];
+    //var houseSelected = url.toString().split("/")[4].split("_")[0];
 
 
     var guestList = [];

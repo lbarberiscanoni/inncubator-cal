@@ -7,15 +7,17 @@ head
     
     //styling
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-    link(rel="stylesheet" href="fullcalendar/fullcalendar.min.css")
 
     //JS
-    script(src="lib/jquery.min.js")
-    script(src="lib/jquery-ui.custom.min.js")
-    script(src="lib/moment.min.js")
-    script(src="fullcalendar/fullcalendar.min.js")
+    script(src="../lib/jquery.min.js")
+    script(src="../lib/jquery-ui.custom.min.js")
+    script(src="../lib/moment.min.js")
+    script(src="../fullcalendar/fullcalendar.min.js")
     script(src="https://cdn.firebase.com/js/client/2.3.0/firebase.js")
 body
-    a(href="index.html").btn.btn-default Search Guests
-    #calendar
-    script(src="scripts/main.js")
+    h1.text-center#propertyName Hello
+    .col-md-5
+    .col-md-4#guestFlow
+    .col-md-5
+    script(src="../scripts/guestFlow.js")
+    
