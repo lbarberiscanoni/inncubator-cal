@@ -2,8 +2,8 @@ var allData = new Firebase("https://inncubator-booking.firebaseio.com");
 
 $(document).ready(function() {
     var url = window.location;
-    var houseSelected = url.toString().split("/")[3].split("_")[0];
-    //var houseSelected = url.toString().split("/")[4].split("_")[0];
+    //var houseSelected = url.toString().split("/")[3].split("_")[0];
+    var houseSelected = url.toString().split("/")[4].split("_")[0];
     $("#propertyName").html("<h1 class='text-center'>" + houseSelected + " checkins</h1>");
 
     //let's get today's date in order to make it the default
