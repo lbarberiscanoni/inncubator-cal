@@ -34,6 +34,8 @@ $(document).ready(function() {
                 lol.css("background-color", "#7EB6FF");
             } else if (parseInt(guest.start.split("-")[2]) == nextDay) {
                 lol.css("background-color", "#FAFAD2");
+            } else if (guest.start < todaysDate) {
+                lol.addClass("disabled");
             };
         };
     });
