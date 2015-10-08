@@ -26,7 +26,7 @@ $(document).ready(function() {
         var guestStart = guest.start.split("-")[1];
         var formattedDate = new Date(guest.start);
         var formattedDate = formattedDate.toString().split(" ")[1] + " " + formattedDate.toString().split(" ")[2];
-        if (guest.location == houseSelected && guestStart == month) {
+        if (guest.location == houseSelected && guestStart == month && guest.start > todaysDate) {
             $("#guestFlow").append("<button class='btn btn-default'>" + guest.title + "<br>" + formattedDate + "</button><br><br>");
             var lol = $("#guestFlow button:last");
             var nextDay = parseInt(todaysDate.split("-")[2]) + 1;
@@ -34,8 +34,6 @@ $(document).ready(function() {
                 lol.css("background-color", "#7EB6FF");
             } else if (parseInt(guest.start.split("-")[2]) == nextDay) {
                 lol.css("background-color", "#FAFAD2");
-            } else if (guest.start < todaysDate) {
-                lol.addClass("disabled");
             };
         };
     });
