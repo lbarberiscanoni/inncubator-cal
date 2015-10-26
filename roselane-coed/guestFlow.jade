@@ -7,7 +7,6 @@ head
     
     //styling
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-    link(rel="stylesheet" href="../fullcalendar/fullcalendar.min.css")
 
     //JS
     script(src="../lib/jquery.min.js")
@@ -16,8 +15,9 @@ head
     script(src="../fullcalendar/fullcalendar.min.js")
     script(src="https://cdn.firebase.com/js/client/2.3.0/firebase.js")
 body
-    a(href="../searchGuest.html").btn.btn-default Search Guests
-    a(href="guestFlow.html").btn.btn-default Checkin Ins
-    a(href="../roselane-coed/roselane-coed_617.html").btn.btn-default Coed Room
-    #calendar
-    script(src="../scripts/main.js")
+    h1.text-center#propertyName Hello
+    .col-md-5
+    .col-md-4#guestFlow
+    .col-md-5
+    script(src="../scripts/guestFlow.js")
+    
