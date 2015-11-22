@@ -16,8 +16,16 @@ head
     script(src="https://cdn.firebase.com/js/client/2.3.0/firebase.js")
 body
     h1.text-center#propertyName Hello
-    .col-md-5
-    .col-md-4#guestFlow
-    .col-md-5
+    .row
+        .col-md-4
+        .col-md-4
+            select.form-control#flowDirection
+                option Select Guest Flow
+                option Check Ins
+                option Check Outs
+        .col-md-4
+    .row
+        .col-md-5
+        .col-md-4#guestFlow
+        .col-md-5
     script(src="../scripts/guestFlow.js")
-    
