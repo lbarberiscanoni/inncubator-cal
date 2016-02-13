@@ -78,6 +78,10 @@ $(document).ready(function() {
                                 var HARDCODED_MAX_EVENT_LIMIT = 20;
                                 window.HARDCODED_MAX_EVENT_LIMIT = HARDCODED_MAX_EVENT_LIMIT;
                                 break;
+                            case "stanford-inn":
+                                var HARDCODED_MAX_EVENT_LIMIT = 12;
+                                window.HARDCODED_MAX_EVENT_LIMIT = HARDCODED_MAX_EVENT_LIMIT;
+                                break;
                         }
                         
                         alert(eventsOnDay.length + " guests on this day");
