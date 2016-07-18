@@ -78,6 +78,14 @@ $(document).ready(function() {
                                 var HARDCODED_MAX_EVENT_LIMIT = 20;
                                 window.HARDCODED_MAX_EVENT_LIMIT = HARDCODED_MAX_EVENT_LIMIT;
                                 break;
+                            case "webster-girls-room":
+                                var HARDCODED_MAX_EVENT_LIMIT = 4;
+                                window.HARDCODED_MAX_EVENT_LIMIT = HARDCODED_MAX_EVENT_LIMIT;
+                                break;
+                            case "webster-private":
+                                var HARDCODED_MAX_EVENT_LIMIT = 1;
+                                window.HARDCODED_MAX_EVENT_LIMIT = HARDCODED_MAX_EVENT_LIMIT;
+                                break;
                             case "stanford-inn":
                                 var HARDCODED_MAX_EVENT_LIMIT = 12;
                                 window.HARDCODED_MAX_EVENT_LIMIT = HARDCODED_MAX_EVENT_LIMIT;
